@@ -3,22 +3,36 @@
  <head> 
   <title>ourWebpage</title>
   <style>
-   h2 {text-align:center;}
-   p {text-align: center;}
+   /* กำหนดให้ H2 และ P จัดกึ่งกลาง */
+   h2, p {
+    text-align: center;
+   }
+   /* กำหนดให้ SPAN จัดกึ่งกลาง โดยต้องแปลงเป็น block element ก่อน */
+   span {
+    text-align: center;
+    display: block;
+    margin-top: 10px; /* เพิ่มระยะห่างด้านบนเล็กน้อย */
+   }
+   /* กำหนดให้รูปภาพจัดกึ่งกลาง โดยต้องแปลงเป็น block element และกำหนด margin: auto */
+   img {
+    display: block;
+    margin: 10px auto;
+   }
   </style>
  </head> 
-  <body>
-    <h2>Digital Literacy class</h2>
-    <p>Topic</p>
-    <p style="color: red">The style is attribute of paragraph tag</p> 
-    <span style="color: blue; font-weight: bold;">Savanna desert with trees and flowers</span>
-   <br>
-   <!--Show picture-->
-   <img src="picture 1.jpg" alt="Flowers" width="400" height="320" >
-   <span style="color: blue; font-weight: bold;">Savanna desert with animals and a small water source</span>
-   <br>
-   <!--Show picture-->
+ <body>
+  <h2>Digital Literacy class</h2>
+  <p>Topic</p>
+  
+  <p style="color: red;">The style is attribute of paragraph tag</p> 
+  
+  <span style="color: blue; font-weight: bold;">Savanna desert with trees and flowers</span>
+  
+  <img src="picture 1.jpg" alt="Flowers" width="400" height="320" >
+  
+  <span style="color: blue; font-weight: bold;">Savanna desert with animals and a small water source</span>
+  
   <img src="picture 2.jpg" alt="Savanna animals" width="400" height="320" >
-   
-    </body> 
-   </html>
+  
+ </body> 
+</html>
